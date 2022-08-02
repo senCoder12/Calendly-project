@@ -5,27 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="Login-Display-Page.css" />
   </head>
   <body>
-    <!-- navbar start -->
     <div id="navContainer">
       <div id="navleft">
         <img
           src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTgwLjkxIDM4MS41MiI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiMwMDZiZmY7fS5jbHMtMntmaWxsOiMwYWU4ZjA7fTwvc3R5bGU+PC9kZWZzPjxnIGlkPSJMYXllcl8yIiBkYXRhLW5hbWU9IkxheWVyIDIiPjxnIGlkPSJMYXllcl8xLTIiIGRhdGEtbmFtZT0iTGF5ZXIgMSI+PGcgaWQ9IldvcmRtYXJrIj48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik05MzguNDYsMTUwLjU0YzI0LjUyLDAsNDcuNzQsMTUsNTIuNjQsNDcuNDFIODgxLjljNC41Ny0yOC40NCwyNS44My00Ny40MSw1Ni41Ni00Ny40MW00OS4xNSw5NS4zNmMtOC4zNCwxMy0yNC40NiwyMy00Ni41MywyMy0zMC40MSwwLTUzLjYzLTE2LjY3LTU5LjE4LTQ2LjFoMTM3YTgzLDgzLDAsMCwwLDEtMTIuNzVjMC00NS43Ny0zMi04Ni4zMi04MS40Mi04Ni4zMi01MSwwLTg1LjY2LDM3LjYtODUuNjYsODYsMCw0OSwzNSw4Niw4Ny42Miw4NiwzMi43LDAsNTcuNTUtMTQuNzIsNzEuOTMtMzdaIi8+PHJlY3QgY2xhc3M9ImNscy0xIiB4PSI4MTAuOTIiIHk9IjUyLjc4IiB3aWR0aD0iMjguNDQiIGhlaWdodD0iMjM4LjY5Ii8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTE3OC4xNSwxOTEuMDlWMjkxLjQ2SDExNDkuN1YxOTIuNzJjMC0yNi44MS0xNS4zNi00MS44NS00MC41NC00MS44NS0yNi4xNiwwLTQ3LjQxLDE1LjM3LTQ3LjQxLDUzLjk1djg2LjY0SDEwMzMuM1YxMjhoMjguNDV2MjMuNTRjMTIuMS0xOS4yOSwzMC4wOC0yNy43OSw1My0yNy43OSwzOC4yNSwwLDYzLjQzLDI1LjUsNjMuNDMsNjcuMzYiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xMzM1LDIwOS43MmMwLTMzLjM1LTI1LjE4LTU4LjUzLTU4LjItNTguNTMtMzIuNywwLTU3Ljg3LDI1LjE4LTU3Ljg3LDU4LjUzczI1LjE3LDU4LjUzLDU3Ljg3LDU4LjUzYzMzLDAsNTguMi0yNS4xOCw1OC4yLTU4LjUzbTI4LjQ0LTE1Ni45NFYyOTEuNDdIMTMzNVYyNjMuMzRjLTEzLjA4LDIwLTM0LDMyLjM4LTYxLjgsMzIuMzgtNDUuNDUsMC04Mi43Mi0zNy42MS04Mi43Mi04NnMzNy4yNy04Niw4Mi43Mi04NmMyNy43OSwwLDQ4LjcyLDEyLjQyLDYxLjgsMzIuMzdWNTIuNzhaIi8+PHJlY3QgY2xhc3M9ImNscy0xIiB4PSIxMzg2LjM4IiB5PSI1Mi43OCIgd2lkdGg9IjI4LjQ0IiBoZWlnaHQ9IjIzOC42OSIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTc2MC4yMiwyMDkuNzJjMC0zMy4zNS0yNS4xNy01OC41My01OC4yLTU4LjUzLTMyLjY5LDAtNTcuODcsMjUuMTgtNTcuODcsNTguNTNzMjUuMTgsNTguNTMsNTcuODcsNTguNTNjMzMsMCw1OC4yLTI1LjE4LDU4LjItNTguNTNNNzg4LjY3LDEyOFYyOTEuNDZINzYwLjIyVjI2My4zNGMtMTMuMDgsMjAtMzQsMzIuMzgtNjEuNzksMzIuMzgtNDUuNDUsMC04Mi43My0zNy42MS04Mi43My04NnMzNy4yOC04Niw4Mi43My04NmMyNy43OSwwLDQ4LjcxLDEyLjQyLDYxLjc5LDMyLjM3VjEyOFoiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik01NzMuNTEsMjYwYTg4LjUzLDg4LjUzLDAsMSwxLDI1LjYtMTUxLjQyLDg3LDg3LDAsMCwxLDEzLjQ4LDEzLjkybDI0LjYxLTE4YTExOS4xNywxMTkuMTcsMCwxLDAtMjEuNzIsMTY2LjY1TDU5OS4xLDI0NS4yNUE4OS4zMiw4OS4zMiwwLDAsMSw1NzMuNTEsMjYwIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTU1Mi4xMiwxMjh2OTIuNzhjMCwzMC0xNy40NSw0OS00NC4wOSw0OXMtNDUuOTMtMTktNDUuOTMtNDlWMTI4aC0yOC43OHY5MGMwLDQ3LjE2LDI5LjM5LDc3Ljc4LDc0LjcxLDc3Ljc4LDM5LjIsMCw0NS4zMi0yNC44LDQ1LjMyLTI1LjQydjMzLjM4YzAsMzMuMDctMTQuMzksNTEuNzUtNDQuNCw1MS43NWE0NC4xOSw0NC4xOSwwLDAsMS00NC0zOC4ybC0yNS43Myw5QTcxLjUzLDcxLjUzLDAsMCwwLDE1MDksMzgxLjUyYzQ2LjU0LDAsNzItMzAuNjMsNzItNzcuNzhWMTI4WiIvPjwvZz48ZyBpZD0iQnJhbmRfbWFyayIgZGF0YS1uYW1lPSJCcmFuZCBtYXJrIj48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0yMzEuNTgsMjIzLjIzQzIyMC42NSwyMzIuOTMsMjA3LDI0NSwxODIuMjUsMjQ1aC0xNC44Yy0xNy45MSwwLTM0LjItNi41MS00NS44Ni0xOC4zMS0xMS4zOS0xMS41My0xNy42Ni0yNy4zMS0xNy42Ni00NC40NFYxNjJjMC0xNy4xMyw2LjI3LTMyLjkxLDE3LjY2LTQ0LjQ0LDExLjY2LTExLjgsMjcuOTUtMTguMyw0NS44Ni0xOC4zaDE0LjhjMjQuNzgsMCwzOC40LDEyLjA2LDQ5LjMzLDIxLjc2LDExLjM1LDEwLDIxLjE0LDE4Ljc0LDQ3LjI1LDE4Ljc0YTc1LjExLDc1LjExLDAsMCwwLDExLjg5LS45NWwtLjA5LS4yM2E4OS41Myw4OS41MywwLDAsMC01LjQ5LTExLjI4TDI2Ny42OSw5Ny4wN2E4OS42NSw4OS42NSwwLDAsMC03Ny42NC00NC44MkgxNTUuMTRBODkuNjUsODkuNjUsMCwwLDAsNzcuNSw5Ny4wN0w2MC4wNSwxMjcuM2E4OS42Nyw4OS42NywwLDAsMCwwLDg5LjY1TDc3LjUsMjQ3LjE4QTg5LjY1LDg5LjY1LDAsMCwwLDE1NS4xNCwyOTJoMzQuOTFhODkuNjUsODkuNjUsMCwwLDAsNzcuNjQtNDQuODJMMjg1LjE0LDIxN2E4OS41Myw4OS41MywwLDAsMCw1LjQ5LTExLjI4bC4wOS0uMjJhNzQsNzQsMCwwLDAtMTEuODktMWMtMjYuMTEsMC0zNS45LDguNjktNDcuMjUsMTguNzQiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xODIuMjUsMTE3LjYxaC0xNC44Yy0yNy4yNiwwLTQ1LjE3LDE5LjQ3LTQ1LjE3LDQ0LjM5djIwLjI1YzAsMjQuOTIsMTcuOTEsNDQuMzksNDUuMTcsNDQuMzloMTQuOGMzOS43MiwwLDM2LjYtNDAuNSw5Ni41OC00MC41YTkxLjY0LDkxLjY0LDAsMCwxLDE2Ljk0LDEuNTYsODkuNTQsODkuNTQsMCwwLDAsMC0zMS4xNSw5Mi41MSw5Mi41MSwwLDAsMS0xNi45NCwxLjU2Yy02MCwwLTU2Ljg2LTQwLjUtOTYuNTgtNDAuNSIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTMzMC4yMywyMDIuNWE4My42Miw4My42MiwwLDAsMC0zNC40NS0xNC44MWMwLC4xMSwwLC4yLDAsLjNhODkuNyw4OS43LDAsMCwxLTUsMTcuNDUsNjUuNTgsNjUuNTgsMCwwLDEsMjguNDgsMTEuNzNjMCwuMDgtLjA1LjE4LS4wOC4yN2ExNTMuNTcsMTUzLjU3LDAsMSwxLDAtOTAuNjNjMCwuMDkuMDUuMTkuMDguMjdhNjUuNDUsNjUuNDUsMCwwLDEtMjguNDgsMTEuNzIsOTAuMyw5MC4zLDAsMCwxLDUsMTcuNDcsMi4zMywyLjMzLDAsMCwwLDAsLjI4LDgzLjYsODMuNiwwLDAsMCwzNC40NS0xNC44YzkuODItNy4yNyw3LjkyLTE1LjQ4LDYuNDMtMjAuMzRhMTcyLjEzLDE3Mi4xMywwLDEsMCwwLDEwMS40M2MxLjQ5LTQuODYsMy4zOS0xMy4wNy02LjQzLTIwLjM0Ii8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMjkwLjcyLDEzOC44YTc0LDc0LDAsMCwxLTExLjg5LDFjLTI2LjExLDAtMzUuOS04LjY5LTQ3LjI0LTE4Ljc0LTEwLjk0LTkuNy0yNC41Ni0yMS43Ny00OS4zNC0yMS43N2gtMTQuOGMtMTcuOTIsMC0zNC4yLDYuNTEtNDUuODYsMTguMzEtMTEuMzksMTEuNTMtMTcuNjYsMjcuMzEtMTcuNjYsNDQuNDR2MjAuMjVjMCwxNy4xMyw2LjI3LDMyLjkxLDE3LjY2LDQ0LjQ0LDExLjY2LDExLjgsMjcuOTQsMTguMyw0NS44NiwxOC4zaDE0LjhjMjQuNzgsMCwzOC40LTEyLjA2LDQ5LjM0LTIxLjc2LDExLjM0LTEwLDIxLjEzLTE4Ljc0LDQ3LjI0LTE4Ljc0YTc1LjExLDc1LjExLDAsMCwxLDExLjg5Ljk1LDg5LDg5LDAsMCwwLDUtMTcuNDUsMi42OCwyLjY4LDAsMCwwLDAtLjMsOTIuNTEsOTIuNTEsMCwwLDAtMTYuOTQtMS41NWMtNjAsMC01Ni44Niw0MC41MS05Ni41OCw0MC41MWgtMTQuOGMtMjcuMjYsMC00NS4xNy0xOS40OC00NS4xNy00NC40VjE2MmMwLTI0LjkyLDE3LjkxLTQ0LjM5LDQ1LjE3LTQ0LjM5aDE0LjhjMzkuNzIsMCwzNi42LDQwLjQ5LDk2LjU4LDQwLjQ5YTkxLjY0LDkxLjY0LDAsMCwwLDE2Ljk0LTEuNTVjMC0uMDksMC0uMTgsMC0uMjhhOTAuMyw5MC4zLDAsMCwwLTUtMTcuNDciLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0yOTAuNzIsMTM4LjhhNzQsNzQsMCwwLDEtMTEuODksMWMtMjYuMTEsMC0zNS45LTguNjktNDcuMjQtMTguNzQtMTAuOTQtOS43LTI0LjU2LTIxLjc3LTQ5LjM0LTIxLjc3aC0xNC44Yy0xNy45MiwwLTM0LjIsNi41MS00NS44NiwxOC4zMS0xMS4zOSwxMS41My0xNy42NiwyNy4zMS0xNy42Niw0NC40NHYyMC4yNWMwLDE3LjEzLDYuMjcsMzIuOTEsMTcuNjYsNDQuNDQsMTEuNjYsMTEuOCwyNy45NCwxOC4zLDQ1Ljg2LDE4LjNoMTQuOGMyNC43OCwwLDM4LjQtMTIuMDYsNDkuMzQtMjEuNzYsMTEuMzQtMTAsMjEuMTMtMTguNzQsNDcuMjQtMTguNzRhNzUuMTEsNzUuMTEsMCwwLDEsMTEuODkuOTUsODksODksMCwwLDAsNS0xNy40NSwyLjY4LDIuNjgsMCwwLDAsMC0uMyw5Mi41MSw5Mi41MSwwLDAsMC0xNi45NC0xLjU1Yy02MCwwLTU2Ljg2LDQwLjUxLTk2LjU4LDQwLjUxaC0xNC44Yy0yNy4yNiwwLTQ1LjE3LTE5LjQ4LTQ1LjE3LTQ0LjRWMTYyYzAtMjQuOTIsMTcuOTEtNDQuMzksNDUuMTctNDQuMzloMTQuOGMzOS43MiwwLDM2LjYsNDAuNDksOTYuNTgsNDAuNDlhOTEuNjQsOTEuNjQsMCwwLDAsMTYuOTQtMS41NWMwLS4wOSwwLS4xOCwwLS4yOGE5MC4zLDkwLjMsMCwwLDAtNS0xNy40NyIvPjwvZz48L2c+PC9nPjwvc3ZnPg=="
         />
-      </div>
-      <div id="navmiddle">
-        <a href="#">Individuals</a>
-        <a href="#">Teams</a>
-        <a href="#">Enterprise</a>
-        <a href="#">Product</a>
-        <a href="#">Pricing</a>
-        <a href="#">Resources</a>
-      </div>
-      <div id="navright">
-        <button><a href="Login-Display-Page.html">Log In</a></button>
-        <button>Get started</button>
       </div>
     </div>
 
@@ -33,203 +20,48 @@
     <div id="easy-main-box">
       <div id="easyscheduling">
         <div id="easy-line">
-          Easy scheduling <span id="easy-span">ahead</span>
+          Welcome Back To <span id="easy-span">Calandly</span>
         </div>
 
         <div id="easyscheduling-ptag">
           <p>
-            Calendly is your hub for scheduling meetings professionally and
-            efficiently, eliminating the hassle of back-and-forth emails so you
-            can get back to work.
+            Log in to your account to get back to your hub for scheduling
+            meetings.
           </p>
         </div>
         <form>
           <div id="formbox">
+            <div id="labe">
+              <label for="formbox-input">Email Address</label>
+            </div>
             <input id="formbox-input" type="email" placeholder="Enter email" />
             <button>Sign up</button>
-            <p>Create your free account. No credit card required.</p>
+          </div>
+          <div id="email-bottom">
+            <p>Don't have an account? <a href="sign-up.html"> Sign Up</a></p>
           </div>
         </form>
       </div>
       <!-- animation start -->
       <div id="easy-animation">
-        <img src="calandly.png" />
+        <div id="calandly-chrome">
+          <button id="whatsnew">WHAT'S NEW?</button>
+          <div id="chrome">
+            <img
+              src="https://images.ctfassets.net/k0lk9kiuza3o/1iXaOfSTG4LH14hl3jhgLV/ad41bedf323438fb04e3b7db51d5dd6b/Calendly_for_Chrome.svg"
+            />
+            <h2>Calandly For Chrome</h2>
+          </div>
+          <p>
+            Use Calendly while you’re on the web, without switching tabs. Select
+            and share hand-picked times or single-use links wherever you’re
+            interacting with invitees.
+          </p>
+          <button id="getchrome">Get Chrome Extension ></button>
+        </div>
       </div>
     </div>
-    <div id="comp-animation">
-      <div id="comp-animation-head">
-        <h2>
-          Simplified scheduling for more than <span>1,000,000</span> users
-          worldwide
-        </h2>
-      </div>
-      <div id="comp-animation-img">
-        <img
-          src="https://images.ctfassets.net/k0lk9kiuza3o/2hJsUFIbIVEEEKj6R2YwR1/87ce3bb8fb245387aa9c376db473c079/ebay__3_.svg"
-        />
-        <img
-          src="https://images.ctfassets.net/k0lk9kiuza3o/6aSAknGku3oEB7jL7xEjLs/244ce9c4c65c8425c8695a50ece73a4d/logo-ancestry.svg"
-        />
-        <img
-          src="https://images.ctfassets.net/k0lk9kiuza3o/42drnxHfXrNOGKnVE9iA3r/7a7cf32f65bd03e0d1d48a6b02bde3d5/Loreal__1_.svg"
-        />
-        <img
-          src="https://images.ctfassets.net/k0lk9kiuza3o/5DR8HfsFIbSQZlUXsBqjWN/9d3183fc00336917d96cef59832b5403/Twilio-logo-red.svg"
-        />
-        <img
-          src="https://images.ctfassets.net/k0lk9kiuza3o/4AUQ47IN6ZBtXtWXt65L3D/0e998b1376e2e3b2fc5489cfa7b3f11c/Zendesk_wordmark__1_.svg"
-        />
-      </div>
-    </div>
-    <!-- mayukh section start -->
-    <div class="section-3">
-      <h3>We make it easy to get started</h3>
-      <div class="section-3-grid-style">
-          <div>
-              <img src="https://images.ctfassets.net/k0lk9kiuza3o/2lyAPMRxz8pdvkah5K6NFp/14203e7358e18e312b30c9674d8e72f1/icon-checkmark.svg" alt="">
-              <h4>Create simple rules</h4>
-              <p>Let Calendly know your availability preferences and it'll do the work for you.</p>
-          </div>
-          <div>
-              <img src="https://images.ctfassets.net/k0lk9kiuza3o/2lyAPMRxz8pdvkah5K6NFp/14203e7358e18e312b30c9674d8e72f1/icon-checkmark.svg" alt="">
-              <h4>Share your link</h4>
-              <p>Send guests your Calendly link or embed it on your website.</p>
-          </div>
-          <div>
-              <img src="https://images.ctfassets.net/k0lk9kiuza3o/2lyAPMRxz8pdvkah5K6NFp/14203e7358e18e312b30c9674d8e72f1/icon-checkmark.svg" alt="">
-              <h4>Get booked</h4>
-              <p>They pick a time and the event is added to your calendar.</p>
-          </div>
-      </div>
-  </div>
-  <div class="section-4 reveal">
-      <h3>Scheduling for any meeting type</h3>
-      <div class="section-4-grid-style">
-          <div>
-              <img src="https://images.ctfassets.net/k0lk9kiuza3o/6eeiV8vQ5r4wapPkjxwmVs/b70237791206b5580e72d77d0fbb60ff/icon-customers.svg" alt="">
-              <h4>One-on-one</h4>
-              <p>Let your clients and colleagues select open meeting types from your schedule</p>
-          </div>
-          <div>
-              <img src="https://images.ctfassets.net/k0lk9kiuza3o/2ISl5s3a5RId9XpeuTJBxV/52a26ea61be5da23f0c2a83e73c2a9e6/Icon-Education.svg" alt="">
-              <h4>Group</h4>
-              <p>Book events for multiple attendees such as webinars and training sessions</p>
-          </div>
-          <div>
-              <img src="https://images.ctfassets.net/k0lk9kiuza3o/6765yY5ajTUxB9MIz4nToI/00f0de305b8ac2ff4ad0ef7941a75a28/collective.svg" alt="">
-              <h4>Collective</h4>
-              <p>Schedule across your team’s calendars for events you co-host with others</p>
-          </div>
-          <div>
-              <img src="https://images.ctfassets.net/k0lk9kiuza3o/35pgmxHTHZfJMr4HwHGibz/ee1cb916d14a7971fbaa8aa24766cf25/round_robin.svg" alt="">
-              <h4>Round robin</h4>
-              <p>Balance hosting responsibilities for your team automatically</p>
-          </div>
-          
-      </div>
-  </div>
-  <div class="section-5 reveal">
-      <h5>SOLUTION</h5>
-      <h3>The right Calendly for the work you do</h3>
-      <div class="section-5-grid-style">
-          <div>
-              <img src="https://images.ctfassets.net/k0lk9kiuza3o/2k4JUWdoiELNlIOiAgY8ZP/989d5854e82505f2c711363ed9d002e4/Icon-Sales.svg" alt="">
-              <h4>Sales</h4>
-              <p>Spend more time selling, and less time on admin. Shorten your sales cycle by letting prospects schedule while they’re in peak buying mode. </p>
-              <button><a href="#">Learn more</a></button>
-          </div>                
-          <div>
-              <img src="https://images.ctfassets.net/k0lk9kiuza3o/2WoX1M1Mu6lUwJrfSGjX5b/a42359992f267f338df0161ba40acc7f/Icon-Demand-Generation.svg" alt="">
-              <h4>Marketing</h4>
-              <p>Convert interested prospects into scheduled meetings and demos faster. Skip steps that cause customer friction.</p>    
-              <button><a href="#">Learn more</a></button>
-          </div>                
-          <div>
-              <img src="https://images.ctfassets.net/k0lk9kiuza3o/6KO0vF2ofioxGmQJGQBdT1/329be086ba555bf2393dd99c32753521/Icon-Customer-Success.svg" alt="">
-              <h4>Customer Success</h4>
-              <P>Offer exceptional support: Your clients will be delighted with one-click scheduling and increased responsiveness. </P>
-              <button><a href="#">Learn more</a></button>
-          </div>                
-          <div>
-              <img src="https://images.ctfassets.net/k0lk9kiuza3o/1kecwP9aYPUOD7cgexPgW5/bf271becdb7ff17e2939353e82792f9c/Icon-Revenue-Ops.svg" alt="">
-              <h4>Revenue Operations</h4>
-              <p>Spend more time selling, and less time on admin. Shorten your sales cycle by letting prospects schedule while they’re in peak buying mode. </p>
-              <button><a href="#">Learn more</a></button>
-          </div>                
-          <div>
-              <img src="https://images.ctfassets.net/k0lk9kiuza3o/Qze1UNJ9kIVk4kZVopC7z/ac18ecb4e93a0c7096c132181fa1f2bf/Icon-Recruiting.svg" alt="">
-              <h4>Recruiting</h4>
-              <p>Simplify recruitment by smoothing every aspect of the interview scheduling process, including automated follow-ups.</p>
-              <button><a href="#">Learn more</a></button>
-          </div>                
-          <div>
-              <img src="https://images.ctfassets.net/k0lk9kiuza3o/4y0cQDGC4yqwssAQYvFivo/3fec9fbec6f26274fd09b9bcffc18c32/IT_Solution.svg" alt="">
-              <h4>Information Technology</h4>
-              <p>Increase scheduling productivity across your org while maintaining full security and control over users.</p>
-              <button class="unique-btn"><a href="#">Learn more</a></button>
-          </div>                                
-      </div>
-  </div>
-  <div class="section-6">
-      <h2>Do more of what you do best</h2>
-      <p>With scheduling hassles and interruptions gone, your day is cleared for accomplishment.</p>
-  </div>
-  <div class="section-7 reveal">
-      <div class="section-7-description">
-          <h6>WORKFLOW MANAGEMENT</h6>
-          <h2>Automate reminders and follow-ups</h2>
-          <p>Calendly puts your entire meeting workflow on autopilot, sending everything from reminder emails to thank you notes, so you can focus on the work only you can do. It’s like getting an assistant, even if you’re a business of one.</p>
-      </div>
-      <div class="section-7-animation">
-
-      </div>
-  </div>
-   <!-- Dheeraj section  -->
-   <div class = section-8>
-    <div class = image>
-        <img src="zoom.jpg" alt="">
-    </div>
-    <div>
-        <p>ON-DEMAND SCHEDULING</p>
-        <h2 class = heading>
-            Make more connections and reduce cancellations
-        </h2>
-        <p>
-            Prospects can schedule meetings in just a few clicks – whenever the moment is right. 
-            And cancellations go down because rescheduling is easy, fast, and on their terms.
-        </p>
-    </div>
-</div>
-
-<!-- 2nd -->
-<div class = section-9>
-    <div>
-        
-        <p>
-            THE COURTEOUS APPROACH
-        </p>
-        <h1>
-            Delight invitees with modern scheduling
-        </h1>
-        <p>
-            Time is a precious commodity. Calendly is the courteous way to book meetings and other appointments, because scheduling with just a few clicks makes the most of everyone's time.
-        </p>
-    </div>
-    <div id = mobile>
-        <img src="mobile.jpg" >
-    </div>
-</div>
-<!-- 3rd part -->
-<div class="section-10">
-    <h1>Try Calendly free</h1>
-    <p>After your 14-day trial of our Teams plan, enjoy the Free version of Calendly – forever.</p>
-    <button>Start for free</button>
-    <p>To inquire about our Enterprise plans, click 
-       <a href=""> here.</a>
-    </p>
-</div>
-<!-- footer -->
-<div class = section-11>
+    <div class = section-11>
     <div class="footer">
         <p>Easy</p>
         <p>ahead</p>
@@ -307,5 +139,25 @@
       
 </div>
   </body>
-</html> 
-<script src="index.js"></script>
+</html>
+<script>
+     var loginArr = JSON.parse(localStorage.getItem("sign-Up")) || [];
+  document
+    .querySelector("#formbox-input+button ")
+    .addEventListener("click", loginFun);
+  function loginFun() {
+    event.preventDefault();
+    var loginArr = JSON.parse(localStorage.getItem("sign-Up")) || [];
+    var emailU = document.getElementById("formbox-input").value;
+
+    var temp = loginArr.filter(function (elem) {
+      return elem.email == emailU;
+    });
+    if (temp.length >= 1) {
+      alert("Login Succesfull");
+    } else {
+      alert("Please Enter Register Email");
+    }
+    document.getElementById("formbox-input").value = "";
+  }
+</script>
