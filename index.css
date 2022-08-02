@@ -1,0 +1,102 @@
+*{
+    font-family: Gilroy, -apple-system, 
+                BlinkMacSystemFont, "Segoe UI", 
+                Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                
+    font-size: 15px;
+}
+
+#container{
+    display: grid;
+
+    /* grid-template-rows:500px 500px 500px; */
+    grid-template-columns: 1fr 2fr 1fr;
+    width: 85%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    
+}
+#container>div{
+    padding: 10px;
+    font-size: 30px;
+}
+#Features>div>p{
+    margin-bottom: 100px;
+}
+#Products{
+    background-image: linear-gradient(rgba(83, 94, 95, 0.192), rgba(234, 241, 241, 0.438));
+    border-top-left-radius : 20px;
+}
+#Products>h4{
+    font-weight: bold;
+    font-size: 28px;
+}
+
+/* #Features{
+    background-image: linear-gradient(rgba(61, 104, 104, 0.438), rgba(158, 206, 211, 0.192));
+} */
+body a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+body a:hover{
+    color: #006bff;
+}
+
+
+#Products> p{
+    font-size: 20px;
+}
+#Features>div>p{
+    color: #666666;
+    font-size: 15px;
+
+}
+
+.Elements{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 50px;
+    margin-top: 40px;
+
+}
+
+.Elements  div img{
+    height: 30px;
+    width: 30px;
+    margin: -20px 0px 0px 0px;
+    padding: auto;
+}
+
+
+.Elements h4:hover{
+    color: #006bff;
+}
+.Elements {
+    color: #666666;
+}
+.SAF a{
+    color: #006bff;
+    font-size: 20px;
+}
+#Solution{
+    /* background-image: linear-gradient(rgba(83, 94, 95, 0.192), rgba(234, 241, 241, 0.438)); */
+    border-top-right-radius : 20px;
+    margin-left: 5%;
+
+}
+.Solutions{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 50px;
+}
+
+#Solution>div>p{
+    font-size: medium;
+    color: #666666;
+}
+.Integration{
+    text-align: left;
+}
