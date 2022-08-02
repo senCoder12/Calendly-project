@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      font-family: Gilroy, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+        "Segoe UI Symbol";
+    }
+    #sign-up-upper {
+      /* border: 2px solid blueviolet; */
+      text-align: center;
+      font-size: 1.3rem;
+      width: 50%;
+      margin: auto;
+      margin-top: 30px;
+    }
+    img {
+      width: 25%;
+      margin: auto;
+    }
+    #sign-up {
+      /* border: 3px solid brown; */
+      margin: auto;
+      max-width: 500px;
+      padding: 48px 22px;
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+      margin-top: 40px;
+      border-radius: 10px;
+    }
+    #labe {
+      width: 100%;
+      margin-bottom: 8px;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    #input-email {
+      display: block;
+      box-sizing: border-box;
+      width: 100%;
+      min-height: 46px;
+      padding: 10px 14px;
+      color: #1a1a1a;
+      font-size: 16px;
+      line-height: 1.5;
+      background: #fff;
+      border: 1px solid #d0d0d0;
+      border-radius: 8px;
+    }
+    #input-email:hover {
+      border: 2px solid #0069ff;
+    }
+    #input-email-button button {
+      background-color: #0069ff;
+      min-height: 44px;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 40px;
+      width: 100%;
+      margin-top: 30px;
+      color: white;
+      font-size: 16px;
+      line-height: 1.5;
+      font-weight: 700;
+    }
+    #form-hr {
+      display: flex;
+
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    #form-hr hr {
+      width: 45%;
+      height: 0px;
+      /* background-color: black; */
+    }
+    #google-button button {
+      width: 100%;
+      justify-content: center;
+      font-size: 16px;
+      line-height: 1.5;
+      background-color: white;
+      min-height: 44px;
+      padding: 8px 16px;
+      border: 1px solid black;
+      border-radius: 40px;
+      margin-bottom: 20px;
+      font-stretch: inherit;
+      font-size: inherit;
+      line-height: inherit;
+      font-family: inherit;
+    }
+    #google-button button img {
+      width: 4%;
+      margin-right: 10px;
+    }
+    #micro-button button {
+      width: 100%;
+      justify-content: center;
+      font-size: 16px;
+      line-height: 1.5;
+      background-color: white;
+      min-height: 44px;
+      padding: 8px 16px;
+      border: 1px solid black;
+      border-radius: 40px;
+      align-items: center;
+      text-align: center;
+      font-stretch: inherit;
+      font-size: inherit;
+      line-height: inherit;
+      font-family: inherit;
+    }
+    #micro-button button img {
+      width: 4%;
+      margin-right: 10px;
+    }
+    #email-bottom {
+      font-size: 14px;
+    }
+    #email-bottom a {
+      text-decoration: none;
+    }
+  </style>
+  <body>
+    <div id="sign-up-upper">
+      <img
+        src="https://assets.calendly.com/packs/authentication/media/logo-f885ef95906ef15bb6fb.png"
+      />
+      <p>Sign up with Calendly for free</p>
+    </div>
+
+    <div id="sign-up">
+      <div id="form-email">
+        <div id="labe">
+          <label for="input-email">Enter your email to get started.</label>
+        </div>
+        <input id="input-email" type="email" placeholder="email address" />
+        <p id="getalert"></p>
+        <div id="input-email-button"><button>Get Started</button></div>
+      </div>
+      <div id="form-hr">
+        <hr />
+        <div id="form-hr-p">OR</div>
+        <hr />
+      </div>
+      <div id="google-button">
+        <button>
+          <img
+            src="https://assets.calendly.com/packs/authentication/media/google-a1417560f643c2131124.svg"
+          />Sign Up with Google
+        </button>
+      </div>
+      <div id="micro-button">
+        <button>
+          <img
+            src="https://assets.calendly.com/packs/authentication/media/microsoft-42b61fa109e1e5d566ff.svg"
+          />
+          Sign Up with Microsoft
+        </button>
+      </div>
+      <div id="email-bottom">
+        <p>Already have an account? <a href="login.html"> Log in</a></p>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  document
+    .querySelector("#input-email-button")
+    .addEventListener("click", signUp);
+  var signArr = JSON.parse(localStorage.getItem("sign-Up")) || [];
+  function signUp() {
+    event.preventDefault();
+    var emailUser = document.getElementById("input-email").value;
+    var sameEmail = JSON.parse(localStorage.getItem("sign-Up")) || [];
+
+    var user = signArr.filter(function (elem) {
+      return elem.email == emailUser;
+    });
+
+    if (user.length >= 1) {
+      //  document.getElementById("getalert").innerText ="An account already exists with this email address.";
+      alert("User Already Exist");
+    } else {
+      var signObj = {
+        email: emailUser,
+      };
+      alert(" Your Email Registered Succesful");
+
+      signArr.push(signObj);
+
+      localStorage.setItem("sign-Up", JSON.stringify(signArr));
+    }
+    document.getElementById("input-email").value = "";
+  }
+</script>
