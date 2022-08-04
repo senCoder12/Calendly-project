@@ -16,8 +16,11 @@ function updateLocation() {
 }
 
 function goforward() {
+    // event.preventDefault()
     var Ename = document.getElementById("name").value;
     var location = document.getElementById("location").value;
+    var spot = document.getElementById("spot").value;
+    // console.log(spot)
     for(var i=0;i<credentials.length;i++){
         if(credentials[i].Ename == Ename) return;
     }
@@ -32,7 +35,7 @@ function goforward() {
     }else if(Ename == ""){
         document.getElementById("name").style.borderColor = "red";
     }else {
-        var obj = {Ename : Ename , location : location , type : "Group"};
+        var obj = {Ename : Ename , location : location , type : "Group", spot : spot};
         credentials.push(obj);
         localStorage.setItem("credentials",JSON.stringify(credentials));
         window.open("./event-ready-page.html","_self");
