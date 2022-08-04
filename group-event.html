@@ -28,14 +28,14 @@
     </div> 
     <div class="section-2">
         <a href="./home.html"><button><i class="fa fa-angle-left" style="font-size:24px;margin-right: 5px;"></i> Back</button></a>
-        <h1>Add Group Event Type</h1>
+        <h1>Add One-on-One Event Type</h1>
     </div>
     <div class="section-3">
         <div>
             <div class="dot"></div>
             <div>
                 <h4>What event is this?</h4>
-                <p>No location given</p>
+                <p><span id="Ename-header"></span><span id="location-header"> No location given</span></p>
             </div>
             <div>
                 <a href="./home.html"><button class="cancleBtn">cancel</button></a>
@@ -47,19 +47,16 @@
             <label for="">Event name*</label><br>
             <input type="text" id="name"/><br>
             <label for="">Location</label><br>
-            <select name="" id="location">
+            <select name="" id="location" onchange="updateLocation()">
                 <option value="" style="color: grey;">Add a location</option>
-                <option value="microTeam">Microsoft Teams</option>
+                <option value="Microsoft Teams">Microsoft Teams</option>
                 <option value="zoom">Zoom</option>
-                <option value="gmeet">Google Meet</option>
+                <option value="Google Meet">Google Meet</option>
             </select><br>
             <label for="">Description</label><br>
             <textarea name="des" id="description" cols="30" rows="10" placeholder="Write a summary and any details your invitee should know about the event."></textarea><br>
-            <label for="">Event Link*</label><br>
-            <input type="text" id="eventLink"><br>
-            <label for="">Max invitees in a spot*</label><br>
-            <input type="text" style="width: 8%;" id="spot"><br>
-            <input type="checkbox" name="" id="" style="width: 2%;"> <span>Display remaining spots on booking page</span>
+            <label for="">Event Link</label><br>
+            <input type="text" id="eventLink">
         </div>
         <div>
             <section>
@@ -70,3 +67,4 @@
     </div>
 </body>
 </html>
+<script src="group-event.js"></script>
