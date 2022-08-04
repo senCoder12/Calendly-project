@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>My Calendly - Add One-on-One Event Type - Calendly</title>
+    <link rel="stylesheet" href="one-on-one.css">
+</head>
+<body>
+    <div class="section-1">
+        <div>
+            <img src="https://assets.calendly.com/packs/frontend/media/logo-square-cd364a3c33976d32792a.png" alt="">
+        </div>
+        <div>
+            <ul>
+                <p class="active"><a href="">Home</a></p>
+                <p><a href="">Availability</a></p>
+                <p><a href="">Integrations</a></p>
+                <p><a href=""> Help</a></p>
+                <p><a href="">
+                    <button>M</button>
+                    Account
+                </a></p>                
+            </ul>
+        </div>
+    </div> 
+    <div class="section-2">
+        <a href="./home.html"><button><i class="fa fa-angle-left" style="font-size:24px;margin-right: 5px;"></i> Back</button></a>
+        <h1>Add Group Event Type</h1>
+    </div>
+    <div class="section-3">
+        <div>
+            <div class="dot"></div>
+            <div>
+                <h4>What event is this?</h4>
+                <p>No location given</p>
+            </div>
+            <div>
+                <a href="./home.html"><button class="cancleBtn">cancel</button></a>
+                <button class="nxtBtn">Next</button>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <label for="">Event name*</label><br>
+            <input type="text" id="name"/><br>
+            <label for="">Location</label><br>
+            <select name="" id="location">
+                <option value="" style="color: grey;">Add a location</option>
+                <option value="microTeam">Microsoft Teams</option>
+                <option value="zoom">Zoom</option>
+                <option value="gmeet">Google Meet</option>
+            </select><br>
+            <label for="">Description</label><br>
+            <textarea name="des" id="description" cols="30" rows="10" placeholder="Write a summary and any details your invitee should know about the event."></textarea><br>
+            <label for="">Event Link*</label><br>
+            <input type="text" id="eventLink"><br>
+            <label for="">Max invitees in a spot*</label><br>
+            <input type="text" style="width: 8%;" id="spot"><br>
+            <input type="checkbox" name="" id="" style="width: 2%;"> <span>Display remaining spots on booking page</span>
+        </div>
+        <div>
+            <section>
+                <a href="./home.html"><button class="cancleBtn">cancel</button></a>
+                <button class="nxtBtn">Next</button>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

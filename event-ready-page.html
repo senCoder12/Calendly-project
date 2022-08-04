@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://css.gg/album.css' rel='stylesheet'>
+    <link href='https://css.gg/awards.css' rel='stylesheet'>
+    <link href='https://css.gg/alarm.css' rel='stylesheet'>
+    <link href='https://css.gg/align-left.css' rel='stylesheet'>
+    <title>My Calendly - Edit One-on-One Event Type - Calendly</title>
+    <link rel="stylesheet" href="one-on-one.css">
+    <style>
+        *{
+            margin: 0px;
+        padding: 0px;
+        font-family: Gilroy, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        line-height: 2;
+        }
+        .main-section {
+            margin-bottom: 50px;
+        }
+       .section-box {
+        display: flex;
+        width: 63%;
+        margin: auto;
+        border: 1px solid ;
+        padding: 10px 20px;
+        margin-top: 8px;
+       }
+       .section-box :first-child {
+        margin-right: 10px;
+       }
+       .section-box h4 {
+        margin-left: 10px;
+        font-size: 14px;
+        font-weight: 400;
+       }
+       .section-box p {
+        font-size: 12px;
+       }
+       .icons{
+        margin-top: 8px;
+        margin-left: 5px;
+       }
+       .content-link {
+        margin: auto;  
+        text-align: center;  
+        margin-top: 20px;
+       }
+       .content-link h3{
+        font-size: 18px;
+        font-weight: 400;
+       }
+       .content-link a{
+        font-size: 16px;
+        text-decoration: none;
+        color: rgb(0,105,255);
+       }
+       .content-link > a:hover {
+        text-decoration: underline;
+       }
+       .main-section h2 {
+        padding-left: 260px;
+        font-size: 16px;
+        color: rgb(38, 13, 13);
+       }
+    </style>
+</head>
+<body>
+    <div class="section-1">
+        <div>
+            <img src="https://assets.calendly.com/packs/frontend/media/logo-square-cd364a3c33976d32792a.png" alt="">
+        </div>
+        <div>
+            <ul>
+                <p class="active"><a href="">Home</a></p>
+                <p><a href="">Availability</a></p>
+                <p><a href="">Integrations</a></p>
+                <p><a href=""> Help</a></p>
+                <p><a href="">
+                    <button>M</button>
+                    Account
+                </a></p>                
+            </ul>
+        </div>
+    </div> 
+    <div class="section-2">
+        <a href="./home.html"><button><i class="fa fa-angle-left" style="font-size:24px;margin-right: 5px;"></i> Back</button></a>
+        <h1>Add One-on-One Event Type</h1>
+    </div>
+    <div class="main-section">
+        <div class="section-box">
+            <div class="dot"></div>
+            <div>
+                <h4>What event is this?</h4>
+                <p><span id="Ename-header"></span><span id="location-header"> No location given</span></p>
+            </div>
+        </div>
+        <div class="section-box">
+            <i class="gg-album icons"></i>
+            <div>
+                <h4>When can people book this event?</h4>
+                <p>30 min, 60 rolling calendar days</span></p>
+            </div>
+        </div>
+        <div class="content-link">
+            <h3><span>event</span> is ready to accept events.</h3>
+            <a href="" target="_blank">https://calendly.com/<span id="mail-link">mayukhsen85082</span>/<span id="Ename-link">event</span> </a>
+        </div>
+        <h2>Additional Options</h2>
+        <div class="section-box">
+            <i class="gg-align-left icons"></i>
+            <div>
+                <h4>Invitee Questions</h4>
+                <p>Name, Email + 1 question</p>
+            </div>
+        </div>
+        <div class="section-box">
+            <i class="gg-alarm icons"></i>
+            <div>
+                <h4>Notifications and Cancellation Policy</h4>
+                <p>Calendar Invitations, No Reminders</p>
+            </div>
+        </div>
+        <div class="section-box">
+            <i class="gg-awards icons"></i>
+            <div>
+                <h4>Confirmation Page</h4>
+                <p>Calendly confirmation page, no active links</p>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="./event-ready-page.js"></script>
