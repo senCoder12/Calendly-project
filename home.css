@@ -194,7 +194,7 @@
     font-weight: 400;
     font-size: 20px;
 }
-#checking{
+.checking{
     margin-right: 88%;
     /* margin-right: 240px; */
 }
@@ -257,16 +257,28 @@
     display: none;
     bottom: 0;
     height: 35px;
-    border: 2px solid;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
     z-index: 100;
-    background-color: #a79999;
+    background-color: #f2ece6;
     padding: 8px 277px;
 }
 .adjust {
     margin-top: 8px;
     margin-right: 10px;
+    color:#5593ff
 }
 #deleteIcon {
     margin-left: 80px;
-    margin-top: 8px;
+    margin-top: 5px;
+    padding: 7px 10px 0px 10px;
+    color:#5593ff;
+    border: 1px solid  #5593ff;
+}
+.border-blue{
+    border-bottom: 3px solid #5593ff !important;
+    border-left: 3px solid #5593ff !important;
+    border-right: 3px solid #5593ff !important;
+}
+.opacityLess {
+    opacity: 50%;
 }
