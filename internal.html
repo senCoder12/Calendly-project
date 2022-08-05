@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Enter Booking Details - Calendly</title>
     <link rel="stylesheet" href="internal.css">
 </head>
 <body>
@@ -16,10 +16,10 @@
             <div id="event1">
                 Masai Meeting
             </div>
-            <h1>Manish Kumar</h1>
+            <h1 id="name">Manish Kumar</h1>
             <div id="😎">
                 <div><span></span>30 min</div>
-                <div><span></span>9:30am-9:30pm, Friday, August 19,<br> 2022</div>
+                <div><span id="time">9:30am</span>-<span id="finalTime">9</span>:30pm, <span id="day">Friday</span>, August <span id="date">19</span>,<br> 2022</div>
                 <div><span></span>Indian Standard Time</div>
             </div>
         </div>
@@ -33,9 +33,10 @@
                 <button id="btn1">Add Guests</button><br>
                 <label for="share">Please share anything that will help prepare for our meeting</label><br>
                 <textarea id="ta" cols="42" rows="6"></textarea>
-                <button id="btn2">Schedule Event</button><br>
+                <button id="btn2" onclick="sendingMail()">Schedule Event</button><br>
               </form>
         </div>
     </div>
+    <script src="internal.js"></script>
 </body>
 </html>
