@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing - Calendly</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <div>
+        <div id="main">
+            <h2>Want to upgrade your account?</h2>
+            <p>You are currently enjoying the <span>Teams trail.</span></p>
+            <p>After 15days you'll be downgraded to the free plan.</p>
+        </div>
+        <div class="wrapper">
+            <h2>Choose the right subscription for you</h2>
+            <input type="radio" onclick="down()" name="slider" id="tab-1" checked>
+            <input type="radio" onclick="up()" name="slider" id="tab-2">
+            <header>
+                <label for="tab-1" class="tab-1">Individuals</label>
+                <label for="tab-2" class="tab-2">Team</label>
+                <div class="slider"></div>
+            </header>
+            <div class="select">
+                <div class="cards-area">
+                    <div class="cards">
+                        <div class="row">
+                            <div class="pricing-details">
+                                <span>Essentials</span>
+                                <p><span>$8</span> USD per seat/month</p>
+                                <p>Billed yearly</p>
+                                <button>Select</button>
+                            </div>
+                            <ul class="features">
+                                <p>Essentials features include:</p>
+                                <li><i class="fas fa-check"></i><span>2 calendar connections (Google, iCloud, Office 365, and Outlook)</span></li>
+                                <li><i class="fas fa-check"></i><span>Create unlimited event types (one-on-one and group events)</span></li>
+                                <li><i class="fas fa-check"></i><span>Create unlimited one-off meetings</span></li>
+                                <li><i class="fas fa-check"></i><span>Connect to Google Meet, GoTo Meeting, Microsoft Teams, Webex, and Zoom web conferencing</span></li>
+                                <li><i class="fas fa-check"></i><span>Get meeting reminders and follow-ups via email</span></li>
+                                <li><i class="fas fa-check"></i><span>Automated event notifications</span></li>
+                                <li><i class="fas fa-check"></i><span>Customize your booking link</span></li>
+                                <li><i class="fas fa-check"></i><span>Add Calendly to your website</span></li>
+                                <li><i class="fas fa-check"></i><span>Add branding to your booking page</span></li>
+                                <li><i class="fas fa-check"></i><span>Connect to Slack</span></li>
+                                <li><i class="fas fa-check"></i><span>Help center access</span></li>
+                                <li><i class="fas fa-check"></i><span>Member support via email in 3 hours or less</span></li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <div class="pricing-details">
+                                <span>Professional</span>
+                                <p><span>$12</span> USD per seat/month</p>
+                                <p>Billed yearly</p>
+                                <button>Select</button>
+                            </div>
+                            <ul class="features">
+                                <p>All Essentials features plus:</p>
+                                <li><i class="fas fa-check"></i><span>6 calendar connections per person (Google, iCloud, Office 365, and Outlook)</span></li>
+                                <li><i class="fas fa-check"></i><span>Create unlimited event types (one-on-one, group, and collective)</span></li>
+                                <li><i class="fas fa-check"></i><span>Customize email notifications and reminders</span></li>
+                                <li><i class="fas fa-check"></i><span>Get meeting notifications via text</span></li>
+                                <li><i class="fas fa-check"></i><span>Get meeting notifications via text</span></li>
+                                <li><i class="fas fa-check"></i><span>Redirect your invitees</span></li>
+                                <li><i class="fas fa-check"></i><span>Manage groups and permissions for your team</span></li>
+                                <li><i class="fas fa-check"></i><span>Remove Calendly branding</span></li>
+                                <li><i class="fas fa-check"></i><span>Customize your confirmation page</span></li>
+                                <li><i class="fas fa-check"></i><span>Customize colors when you add Calendly to your website</span></li>
+                                <li><i class="fas fa-check"></i><span>Access over 700 app integrations with Zapier</span></li>
+                                <li><i class="fas fa-check"></i><span>Get custom integrations with webhooks</span></li>
+                                <li><i class="fas fa-check"></i><span>Connect to HubSpot</span></li>
+                                <li><i class="fas fa-check"></i><span>Connect to Mailchimp</span></li>
+                                <li><i class="fas fa-check"></i><span>Collect payments via Stripe and PayPal</span></li>
+                                <li><i class="fas fa-check"></i><span>Track with Google Analytics and Facebook Pixel</span></li>
+                                <li><i class="fas fa-check"></i><span>Integrate Gmail and Outlook for workflows</span></li>
+                                <li><i class="fas fa-check"></i><span>Live chat support for teams of 10+</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    document.querySelector('#tab-2').addEventListener('click',()=>{
+        window.location.href='billing_team.html'
+    });
+</script>
