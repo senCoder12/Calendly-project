@@ -40,6 +40,20 @@
       font-weight: 700;
       font-size: 14px;
     }
+    #input-name {
+      display: block;
+      box-sizing: border-box;
+      width: 100%;
+      min-height: 46px;
+      padding: 10px 14px;
+      color: #1a1a1a;
+      font-size: 16px;
+      line-height: 1.5;
+      background: #fff;
+      border: 1px solid #d0d0d0;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
     #input-email {
       display: block;
       box-sizing: border-box;
@@ -139,6 +153,10 @@
     <div id="sign-up">
       <div id="form-email">
         <div id="labe">
+          <label for="input-email">Name</label>
+        </div>
+        <input id="input-name" type="text" placeholder="Enter your name" />
+        <div id="labe">
           <label for="input-email">Enter your email to get started.</label>
         </div>
         <input id="input-email" type="email" placeholder="email address" />
@@ -179,6 +197,7 @@
   function signUp() {
     event.preventDefault();
     var emailUser = document.getElementById("input-email").value;
+    var nameUser = document.getElementById("input-name").value;
     var sameEmail = JSON.parse(localStorage.getItem("sign-Up")) || [];
 
     var user = signArr.filter(function (elem) {
@@ -190,6 +209,7 @@
       alert("User Already Exist");
     } else {
       var signObj = {
+        name: nameUser,
         email: emailUser,
       };
       alert(" Your Email Registered Succesful");
