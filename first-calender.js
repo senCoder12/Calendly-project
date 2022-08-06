@@ -17,6 +17,10 @@ document.querySelectorAll(".clickBtn")[15].addEventListener("click",sendDate);
 document.querySelectorAll(".clickBtn")[16].addEventListener("click",sendDate);
 document.querySelectorAll(".clickBtn")[17].addEventListener("click",sendDate);
 
+
+var credentials = JSON.parse(localStorage.getItem("credentials"));
+document.getElementById("Ename").innerText = credentials[credentials.length - 1].Ename;
+
 function sendDate() {
     var date = Number(event.path[0].innerText);
     var day;

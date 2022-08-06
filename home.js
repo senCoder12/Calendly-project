@@ -38,7 +38,7 @@ function displayMeeting(credentials) {
         </div>
         <h2>${elm.Ename}</h2>
         <p>30 mins,${elm.type}</p>
-        <button class="viewPageBtn"><a href="">View booking page</a></button>
+        <button class="viewPageBtn" onclick="redirect(${index})"><a href="">View booking page</a></button>
         <div>
             <p><i class="fa fa-copy" style="margin-right: 5px;"></i>Copy Link</p>
             <button>Share</button>
@@ -47,6 +47,14 @@ function displayMeeting(credentials) {
     })
 }
 displayMeeting(credentials);
+
+function redirect(i) {
+    event.preventDefault();
+    credentials.push(credentials[i]);
+    credentials.splice(i,1);
+    localStorage.setItem("credentials",JSON.stringify(credentials));
+    window.open("./first-calender.html");
+}
 
 document.querySelector(".popupBtn").addEventListener("click",showPopup);
 document.getElementById("popup").style.display = "none";
