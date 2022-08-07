@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing - Calendly</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <div>
+        <div id="main">
+            <h2>Want to upgrade your account?</h2>
+            <p>You are currently enjoying the <span>Teams trail.</span></p>
+            <p>After 15days you'll be downgraded to the free plan.</p>
+        </div>
+        <div class="wrapper">
+            <h2>Choose the right subscription for your team</h2>
+            <input type="radio" onclick="down()" name="slider" id="tab-1">
+            <input type="radio" onclick="up()" name="slider" id="tab-2" checked>
+            <header>
+                <label for="tab-1" class="tab-1">Individuals</label>
+                <label for="tab-2" class="tab-2">Team</label>
+                <div class="slider"></div>
+            </header>
+            <div class="select">
+                <div class="cards-area">
+                    <div class="cards">
+                        <div class="row">
+                            <div class="pricing-details">
+                                <span>Professional</span>
+                                <p><span>$12</span> USD per seat/month</p>
+                                <p>Billed yearly</p>
+                                <button>Select</button>
+                            </div>
+                            <ul class="features">
+                                <p>All Essentials features plus:</p>
+                                <li><i class="fas fa-check"></i><span>6 calendar connections per person (Google, iCloud, Office 365, and Outlook)</span></li>
+                                <li><i class="fas fa-check"></i><span>Create unlimited event types (one-on-one, group, and collective)</span></li>
+                                <li><i class="fas fa-check"></i><span>Customize email notifications and reminders</span></li>
+                                <li><i class="fas fa-check"></i><span>Get meeting notifications via text</span></li>
+                                <li><i class="fas fa-check"></i><span>Get meeting notifications via text</span></li>
+                                <li><i class="fas fa-check"></i><span>Redirect your invitees</span></li>
+                                <li><i class="fas fa-check"></i><span>Manage groups and permissions for your team</span></li>
+                                <li><i class="fas fa-check"></i><span>Remove Calendly branding</span></li>
+                                <li><i class="fas fa-check"></i><span>Customize your confirmation page</span></li>
+                                <li><i class="fas fa-check"></i><span>Customize colors when you add Calendly to your website</span></li>
+                                <li><i class="fas fa-check"></i><span>Access over 700 app integrations with Zapier</span></li>
+                                <li><i class="fas fa-check"></i><span>Get custom integrations with webhooks</span></li>
+                                <li><i class="fas fa-check"></i><span>Connect to HubSpot</span></li>
+                                <li><i class="fas fa-check"></i><span>Connect to Mailchimp</span></li>
+                                <li><i class="fas fa-check"></i><span>Collect payments via Stripe and PayPal</span></li>
+                                <li><i class="fas fa-check"></i><span>Track with Google Analytics and Facebook Pixel</span></li>
+                                <li><i class="fas fa-check"></i><span>Integrate Gmail and Outlook for workflows</span></li>
+                                <li><i class="fas fa-check"></i><span>Live chat support for teams of 10+</span></li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <div class="pricing-details">
+                                <span>Teams</span>
+                                <p><span>$16</span> USD per seat/month</p>
+                                <p>Billed yearly</p>
+                                <button>Select</button>
+                            </div>
+                            <ul class="features">
+                                <p>All Professional features plus:</p>
+                                <li><i class="fas fa-check"></i><span>Create unlimited event types (one-on-one, group, collective, and round robin)</span></li>
+                                <li><i class="fas fa-check"></i><span>Connect to Salesforce</span></li>
+                                <li><i class="fas fa-check"></i><span>Manage event types as an admin</span></li>
+                                <li><i class="fas fa-check"></i><span>Live chat support</span></li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <div class="pricing-details">
+                                <span>Enterprise</span>
+                                <p><span>Let's chat</span></p>
+                                <p>Billed yearly</p>
+                                <button>Select</button>
+                            </div>
+                            <ul class="features">
+                                <p>All Teams features plus:</p>
+                                <li><i class="fas fa-check"></i><span>SAML single sign-on (SSO)</span></li>
+                                <li><i class="fas fa-check"></i><span>Secure and simplify ID management with SCIM</span></li>
+                                <li><i class="fas fa-check"></i><span>Expedited member support via email</span></li>
+                                <li><i class="fas fa-check"></i><span>Dedicated Calendly account partner</span></li>
+                                <li><i class="fas fa-check"></i><span>Onboarding and implementation</span></li>
+                                <li><i class="fas fa-check"></i><span>Adoption and outcome guidance</span></li>
+                                <li><i class="fas fa-check"></i><span>Security and legal reviews</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    document.querySelector('#tab-1').addEventListener('click',()=>{
+        window.location.href='billing_individuals.html'
+    });
+</script>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>My Calendly - Event Types - Calendly</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="section-1">
+        <div>
+            <img src="https://assets.calendly.com/packs/frontend/media/logo-square-cd364a3c33976d32792a.png" alt="">
+        </div>
+        <div>
+            <ul>
+                <p class="active"><a href="">Home</a></p>
+                <p><a href="">Availability</a></p>
+                <p><a href="">Integrations</a></p>
+                <p><a href=""> Help</a></p>
+                <p class="popupBtn"><a href="">
+                    <button id="nameFirstLater">M</button>
+                    Account
+                </a></p> 
+                <div id="popup">
+                    <a href="./billing_individuals.html">Billing</a><br>
+                    <hr>
+                    <a href="./index.html">Log out</a>
+                </div>               
+            </ul>
+        </div>
+    </div>    
+    <div class="section-2">
+        <div>My Calendly</div>
+        <button><span>+</span>Create</button>
+    </div>
+    <div class="section-3">
+        <button id="active-section"><a href="">Event Types</a></button>
+        <button class="inactive-section"><a href="">Scheduled Events</a></button>
+        <button class="inactive-section"><a href="">Workflows</a></button>
+        <button class="inactive-section"><a href="">Routing Forms</a></button>
+    </div>
+    <div class="section-4">
+        <i class="fa fa-search"></i></i><button class="filterBtn"><input type="text" class="searchTerm" id="abc" placeholder="Filter" /></button>
+    </div>
+    <div class="section-5">
+        <div class="icon-logo-name">
+            <div class="dot"><span id="firstLa">M</span></div>
+            <div class="name-email">
+                <div id="name">
+                    Mayukh Sen
+                </div>
+                <div id="email">
+                    mayukhsen85082@gmail.com
+                </div>
+            </div>
+        </div>
+        <div>
+            <a href="./eventType.html"><button><span>+</span>New Event Type</button></a>
+            <i class="fa fa-gear"></i>
+        </div>
+    </div>
+    <div class="section-6"></div>
+    </div>
+    <div class="section-7">
+        <i class="fa fa-remove adjust"></i> <p>1 selected</p>
+        <i class="fa fa-trash-o" id="deleteIcon"></i>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+
+</html>
+<script src="home.js"></script>
