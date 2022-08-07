@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="payment.css" />
+  </head>
+  <body>
+    <div id="payment-box">
+      <div id="payment-upper">
+        <h2>Upgrade to Professional</h2>
+        <p>Prices are in USD</p>
+        <h3>Add seats</h3>
+        <input type="number" />
+        <div><input type="radio" />$15 /user/mo paid monthly</div>
+        <p>$15 due today</p>
+        <div><input type="radio" />$12 /user/mo paid monthly</div>
+        <p>$144 due today</p>
+      </div>
+      <div id="payment-middle">
+        <h3>Select payment type</h3>
+        <div id="card">
+          <div id="labe">Credit card</div>
+          <input id="cardnum" type="number" placeholder="Card Number" />
+          <button>Payment</button>
+        </div>
+      </div>
+      <div id="payment-bottom">
+        <p>Total payment due: $144</p>
+        <p>Are you tax exempt?<a href="#"> Submit documentation</a></p>
+        <div id="payment-button">
+          <button>Cancel</button> <button>Upgrade</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  document.querySelector("#card >button").addEventListener("click", paymentotp);
+
+  function paymentotp() {
+    event.preventDefault();
+    var cardN = document.getElementById("cardnum").value;
+    if (cardN === "1234567891234567") {
+      window.open("otpPage.html", "_self");
+    } else {
+      alert("Please Fill Correct Credentials");
+    }
+    cardN.innerHTML = "";
+  }
+</script>
