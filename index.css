@@ -74,6 +74,9 @@ body {
   font-weight: 600;
   border-radius: 30px;
 }
+#formbox-input:focus {
+  outline: none;
+}
 #easyscheduling {
   /* border: 1px solid red; */
   width: 40%;

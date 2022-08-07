@@ -25,3 +25,13 @@ function design() {
     pro.style.display = "none";
   }
 }
+
+if(localStorage.getItem("sign-Up")) {
+    document.querySelector("#logInBtn").style.display = "none";
+}
+
+function homePage() {
+    if(localStorage.getItem("sign-Up")) {
+        window.open("./home.html","_self");
+    }
+}

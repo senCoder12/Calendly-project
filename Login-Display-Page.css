@@ -23,6 +23,9 @@ body {
   width: 12%;
   margin-left: 80px;
 }
+#formbox-input:focus {
+  outline: none;
+}
 #navmiddle {
   /* border: 1px solid blue; */
   display: flex;

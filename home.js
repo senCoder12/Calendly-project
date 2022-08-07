@@ -116,3 +116,8 @@ function filterMeeting() {
     displayMeeting(filterArr);
     if(filterName=="") displayMeeting(credentials);
 }
+
+document.querySelector("#logout").addEventListener("click",deleteNode);
+function deleteNode() {
+    localStorage.removeItem("sign-Up");
+}
