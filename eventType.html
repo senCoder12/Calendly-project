@@ -1,84 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>My Calendly - Create New Event Type - Calendly</title>
-    <link rel="stylesheet" href="eventType.css">
-</head>
-<body>
+    <link rel="stylesheet" href="eventType.css" />
+  </head>
+  <body>
     <div class="section-1">
-        <div>
-            <img src="https://assets.calendly.com/packs/frontend/media/logo-square-cd364a3c33976d32792a.png" alt="">
-        </div>
-        <div>
-            <ul>
-                <p class="active"><a href="">Home</a></p>
-                <p><a href="">Availability</a></p>
-                <p><a href="">Integrations</a></p>
-                <p><a href=""> Help</a></p>
-                <p><a href="">
-                    <button>M</button>
-                    Account
-                </a></p>                
-            </ul>
-        </div>
-    </div> 
+      <div>
+        <img
+          src="https://assets.calendly.com/packs/frontend/media/logo-square-cd364a3c33976d32792a.png"
+          alt=""
+        />
+      </div>
+      <div>
+        <ul>
+          <p class="active"><a href="">Home</a></p>
+          <p><a href="">Availability</a></p>
+          <p><a href="">Integrations</a></p>
+          <p><a href=""> Help</a></p>
+          <p>
+            <a href="">
+              <button id="passLetter">M</button>
+              Account
+            </a>
+          </p>
+        </ul>
+      </div>
+    </div>
     <div class="section-2">
-        <a href="./home.html"><button><i class="fa fa-angle-left" style="font-size:24px;margin-right: 5px;"></i> Back</button></a>
-        <h1>Create New Event Type</h1>
+      <a href="./home.html"
+        ><button>
+          <i
+            class="fa fa-angle-left"
+            style="font-size: 24px; margin-right: 5px"
+          ></i>
+          Back
+        </button></a
+      >
+      <h1>Create New Event Type</h1>
     </div>
     <div class="section-3">
+      <div>
         <div>
-            <div>
-                <img src="./images/one_on_one.svg" alt="">
-            </div>
-            <div>
-                <h2>One-on-One</h2>
-                <p>Let an invitee pick a time to meet with you.</p>
-            </div>
-            <div>
-                <a href="./one-on-one.html"><button>Create</button></a>
-            </div>
+          <img src="./images/one_on_one.svg" alt="" />
         </div>
         <div>
-            <div>
-                <img src="./images/group-7.svg" alt="">
-            </div>
-            <div>
-                <h2>Group</h2>
-                <p>Let multiple invitees meet with you at one time.</p>
-            </div>
-            <div>
-                <a href="./group-event.html"><button>Create</button></a>
-            </div>
+          <h2>One-on-One</h2>
+          <p>Let an invitee pick a time to meet with you.</p>
         </div>
         <div>
-            <div>
-                <img src="./images/collective-4.svg" alt="">
-            </div>
-            <div>
-                <h2>Collective</h2>
-                <p>Host an event with another person and let invitees pick a time when you’re all available.</p>
-            </div>
-            <div>
-                <button>Create</button>
-            </div>
+          <a href="./one-on-one.html"><button>Create</button></a>
+        </div>
+      </div>
+      <div>
+        <div>
+          <img src="./images/group-7.svg" alt="" />
         </div>
         <div>
-            <div>
-                <img src="./images/round_robin-3.svg" alt="">
-            </div>
-            <div>
-                <h2>Round Robin</h2>
-                <p>Create an event that cycles between multiple hosts.</p>
-            </div>
-            <div>
-                <button>Create</button>
-            </div>
+          <h2>Group</h2>
+          <p>Let multiple invitees meet with you at one time.</p>
         </div>
+        <div>
+          <a href="./group-event.html"><button>Create</button></a>
+        </div>
+      </div>
+      <div>
+        <div>
+          <img src="./images/collective-4.svg" alt="" />
+        </div>
+        <div>
+          <h2>Collective</h2>
+          <p>
+            Host an event with another person and let invitees pick a time when
+            you’re all available.
+          </p>
+        </div>
+        <div>
+          <button>Create</button>
+        </div>
+      </div>
+      <div>
+        <div>
+          <img src="./images/round_robin-3.svg" alt="" />
+        </div>
+        <div>
+          <h2>Round Robin</h2>
+          <p>Create an event that cycles between multiple hosts.</p>
+        </div>
+        <div>
+          <button>Create</button>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
+<script>
+  var nameEmail = JSON.parse(localStorage.getItem("sign-Up"));
+  var fullName = nameEmail[nameEmail.length - 1].name;
+  document.getElementById(
+    "passLetter"
+  ).innerText = `${fullName[0].toUpperCase()}`;
+</script>

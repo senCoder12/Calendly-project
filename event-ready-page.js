@@ -1,8 +1,16 @@
 var credentials = JSON.parse(localStorage.getItem("credentials"));
-document.getElementById("Ename-header").innerText = credentials[credentials.length - 1].Ename;
-document.getElementById("Ename-link").innerText = credentials[credentials.length - 1].Ename;
-document.getElementById("location-header").innerText = credentials[credentials.length - 1].location;
+document.getElementById("Ename-header").innerText =
+  credentials[credentials.length - 1].Ename;
+document.getElementById("Ename-link").innerText =
+  credentials[credentials.length - 1].Ename;
+document.getElementById("location-header").innerText =
+  credentials[credentials.length - 1].location;
 
 var nameEmail = JSON.parse(localStorage.getItem("sign-Up"));
 var fullEmail = nameEmail[nameEmail.length - 1].email;
 document.querySelector("#mail-link").innerText = fullEmail.split("@")[0];
+
+var fullName = nameEmail[nameEmail.length - 1].name;
+document.getElementById(
+  "passLetter"
+).innerText = `${fullName[0].toUpperCase()}`;

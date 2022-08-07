@@ -92,6 +92,7 @@ body {
 }
 #easy-span {
   color: rgb(0, 107, 255);
+  font-size: 4rem;
 }
 #easyscheduling-ptag {
   text-align: left;
@@ -599,7 +600,7 @@ body {
   cursor: pointer;
 }
 
-@media only screen and (min-width: 481px) and (max-width: 767px) {
+@media only screen and (min-width: 481px) and (max-width: 721px) {
   .section-3-grid-style {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -635,6 +636,82 @@ body {
     /* width: 18%;
       margin-left: -28px; */
     display: none;
+  }
+  #navmiddle {
+    display: none;
+  }
+  #easy-main-box {
+    display: block;
+  }
+  #easy-animation {
+    display: none;
+  }
+
+  #easyscheduling {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+  }
+  #easy-line {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+  }
+  #easyscheduling-ptag {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  #formbox {
+    margin-top: 40px;
+  }
+  #comp-animation-img {
+    display: block;
+  }
+  #formbox {
+    width: 80%;
+  }
+  .section-8 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section-9 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section-10 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section-10 > h1 {
+    margin-left: 40px;
+    /* border: 1px solid red; */
+  }
+  .section-10 > button {
+    margin-top: 25px;
+    margin-left: 130px;
+  }
+  .section-10 > :last-child {
+    margin-left: 30px;
+  }
+  .section-11 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer {
+    /* display: flex;
+        justify-content: row; */
+    margin-left: 8px;
+  }
+  .footer_container ul {
+    display: grid;
+    grid-template-columns: repeat(0.5, 1fr);
+  }
+  .footer_container:nth-child(3) {
+    justify-items: end;
+    justify-content: end;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 480px) {
@@ -694,6 +771,134 @@ body {
   .section-7-animation img {
     /* width: 18%;
       margin-left: -28px; */
+    display: none;
+  }
+  #formbox {
+    width: 80%;
+  }
+  #navmiddle {
+    display: none;
+  }
+  #easy-animation {
+    display: none;
+  }
+  #navleft img {
+    width: 80%;
+  }
+  #easyscheduling {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+  }
+  #easy-line {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+  }
+  #easyscheduling-ptag {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  #comp-animation-img {
+    display: block;
+  }
+  #easy-main-box {
+    display: block;
+  }
+  #comp-animation-head {
+    width: 80%;
+    font-size: 10px;
+  }
+  #comp-animation {
+    padding: 0px;
+  }
+  #comp-animation-img {
+    padding-left: 95px;
+    margin-top: 10px;
+  }
+  #easyscheduling-ptag {
+    width: 90%;
+    font-size: 16px;
+  }
+  #easy-main-box form {
+    font-size: 10px;
+  }
+  #formbox button {
+    height: 50px;
+    margin-top: 25px;
+    margin-right: 10px;
+  }
+  #easy-line {
+    font-size: 22px;
+    margin-top: 100px;
+  }
+  #easy-span {
+    font-size: 22px;
+  }
+  #formbox-input {
+    font-size: 12px;
+    margin-top: 24px;
+    height: 48px;
+  }
+  .section-8 {
+    display: flex;
+    /* flex-wrap: wrap; */
+  }
+  .image {
+    display: none;
+  }
+  .section-9 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #mobile {
+    display: none;
+  }
+  .section-10 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section-10 > h1 {
+    margin-left: 40px;
+    /* border: 1px solid red; */
+    margin: auto;
+  }
+  .section-10 > button {
+    margin-top: 25px;
+    margin: auto;
+  }
+  .section-10 > :last-child {
+    margin-left: 30px;
+    margin: auto;
+  }
+  .section-11 {
+    display: flex;
+
+    flex-wrap: wrap;
+  }
+
+  .footer {
+    /* display: flex;
+        justify-content: row; */
+    width: 50%;
+    margin: auto;
+  }
+  .footer_container ul {
+    display: grid;
+    /* border: 1px solid red; */
+    grid-template-columns: repeat(0.5, 1fr);
+
+    text-align: center;
+  }
+  .footer_container :nth-child(3) {
+    justify-items: end;
+  }
+}
+@media only screen and (min-width: 722px) and (max-width: 1200px) {
+  #navmiddle {
     display: none;
   }
 }
