@@ -21,6 +21,10 @@ document.querySelectorAll(".clickBtn")[17].addEventListener("click",sendDate);
 var credentials = JSON.parse(localStorage.getItem("credentials"));
 document.getElementById("Ename").innerText = credentials[credentials.length - 1].Ename;
 
+var nameEmail = JSON.parse(localStorage.getItem("sign-Up"));
+var fullName = nameEmail[nameEmail.length - 1].name;
+document.querySelector("#name").innerText = fullName;
+
 function sendDate() {
     var date = Number(event.path[0].innerText);
     var day;

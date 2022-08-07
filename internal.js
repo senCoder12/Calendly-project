@@ -1,6 +1,7 @@
-// var nameEmail = JSON.parse(localStorage.getItem("nameEmail"));
-// var fullName = nameEmail.name;
-// document.querySelector("#name").innerText = fullname;
+var nameEmail = JSON.parse(localStorage.getItem("sign-Up"));
+var fullName = nameEmail[nameEmail.length - 1].name;
+document.querySelector("#name").innerText = fullName;
+
 var dateDay = JSON.parse(localStorage.getItem("dateDay"));
 var date = dateDay.date;
 var day = dateDay.day;

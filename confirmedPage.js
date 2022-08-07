@@ -11,9 +11,9 @@ document.querySelector("#ampm").innerText = time.split("0")[time.split("0").leng
 var credentials = JSON.parse(localStorage.getItem("credentials"));
 document.getElementById("Ename").innerText = credentials[credentials.length - 1].Ename;
 
-// var nameEmail = JSON.parse(localStorage.getItem("nameEmail"));
-// var fullName = nameEmail.name;
-// document.querySelector("#name").innerText = fullname;
+var nameEmail = JSON.parse(localStorage.getItem("sign-Up"));
+var fullName = nameEmail[nameEmail.length - 1].name;
+document.querySelector("#name").innerText = fullname;
 
 document.querySelector(".home").addEventListener("click",function(){
     window.open("./index.html","_self");

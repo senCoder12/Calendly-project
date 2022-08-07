@@ -2,14 +2,14 @@
 var credentials = JSON.parse(localStorage.getItem("credentials"));  
 
 window.onload = function(){
-    // var nameEmail = JSON.parse(localStorage.getItem("nameEmail"));
-    // var fullName = nameEmail.name;
-    // var fullEmail = nameEmail.email;
-    // var getMail = fullEmail.split("@")[0];
-    // document.getElementById("nameFirstLater").innerText = fullName[0].toUpperCase; 
-    // document.getElementById("firstLa").innerText = fullName[0].toUpperCase; 
-    // document.getElementById("name").innerText = fullName;
-    // document.querySelector("#email").innerText = `calendly.com/${getMail}`;
+    var nameEmail = JSON.parse(localStorage.getItem("sign-Up"));
+    var fullName = nameEmail[nameEmail.length - 1].name;
+    var fullEmail = nameEmail[nameEmail.length - 1].email;
+    var getMail = fullEmail.split("@")[0];
+    document.getElementById("nameFirstLater").innerText = fullName[0].toUpperCase; 
+    document.getElementById("firstLa").innerText = fullName[0].toUpperCase; 
+    document.getElementById("name").innerText = fullName;
+    document.querySelector("#email").innerText = `calendly.com/${getMail}`;
 
     if(!localStorage.getItem("credentials") || JSON.parse(localStorage.getItem("credentials")).length == 0) {
         var obj =  {Ename : "30 Minute Meeting" , location : null , type : "One-on-One"};

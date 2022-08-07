@@ -10,6 +10,10 @@ var dateDay = JSON.parse(localStorage.getItem("dateDay"));
 document.querySelector("#date").innerText = dateDay.date ;
 document.querySelector("#day").innerText = dateDay.day;
 
+var nameEmail = JSON.parse(localStorage.getItem("sign-Up"));
+var fullName = nameEmail[nameEmail.length - 1].name;
+document.querySelector("#name").innerText = fullName;
+
 for(var i=0;i<document.querySelectorAll(".clickBtn").length;i++) {
     if(Number(document.querySelectorAll(".clickBtn")[i].innerText) == dateDay.date) {
         document.querySelectorAll(".clickBtn")[i].style.backgroundColor = "rgb(75 134 216)"
