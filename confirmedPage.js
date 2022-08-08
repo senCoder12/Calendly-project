@@ -16,5 +16,5 @@ var fullName = nameEmail[nameEmail.length - 1].name;
 document.querySelector("#name").innerText = fullName;
 
 document.querySelector(".home").addEventListener("click",function(){
-    window.open("./index.html","_self");
+    window.open("./home.html","_self");
 })
