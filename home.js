@@ -80,7 +80,13 @@ function deleteMeeting(i) {
         opacityLess.setAttribute("class","opacityLess");
         document.querySelector(".section-7").style.display = "flex"
         document.getElementById("deleteIcon").addEventListener("click",function(){
-            deleteNode(i);
+            // deleteNode(i);
+            console.log("click");
+            credentials.splice(i,1);
+            localStorage.setItem("credentials",JSON.stringify(credentials));
+            credentials = JSON.parse(localStorage.getItem("credentials"));
+            displayMeeting(credentials);
+            document.querySelector(".section-7").style.display = "none"
         });
         document.querySelector(".adjust").addEventListener("click",function(){
             document.querySelector(".section-7").style.display = "none";
@@ -91,6 +97,7 @@ function deleteMeeting(i) {
     }
 }
 function deleteNode(i) {
+    console.log("click");
     credentials.splice(i,1);
     localStorage.setItem("credentials",JSON.stringify(credentials));
     credentials = JSON.parse(localStorage.getItem("credentials"));
